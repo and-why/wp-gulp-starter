@@ -2,11 +2,17 @@
   display: block;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   align-items: center;
+  grid-template-areas:
+    "menu"
+    "branding"
 }
 
 @media screen and (min-width: 37.5em) {
   .site-header {
-    grid-template-columns: 300px 1fr
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      " branding menu"
   }
 }
