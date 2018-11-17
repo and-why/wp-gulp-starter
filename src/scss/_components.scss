@@ -1,0 +1,12 @@
+.site-header {
+  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-header {
+    grid-template-columns: 300px 1fr
+  }
+}
