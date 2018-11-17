@@ -1,8 +1,9 @@
 // Gulp.js configuration
 'use strict';
 
-// theme name - change to start new theme
+// theme name - change these to start new theme
 const themeName = 'wpgulpstarter';
+const proxy = 'http://mycoffeeplace.local/';
 
 const // source and build folders - change as required
   dir = {
@@ -111,7 +112,7 @@ gulp.task('build', ['php', 'css', 'js']);
 
 // Browsersync options
 const syncOpts = {
-  proxy: 'http://sachael-miller.local/',
+  proxy: proxy,
   files: dir.build + '**/*',
   open: false,
   notify: false,
