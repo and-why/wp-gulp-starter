@@ -31,6 +31,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script type='text/javascript' src='//wp-content/themes/sachaelmiller/js/scripts.js'></script>
 
 </body>
 </html>

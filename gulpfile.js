@@ -2,7 +2,7 @@
 'use strict';
 
 // theme name - change to start new theme
-const themeName = 'sachaelmiller';
+const themeName = 'wpgulpstarter';
 
 const // source and build folders - change as required
   dir = {
