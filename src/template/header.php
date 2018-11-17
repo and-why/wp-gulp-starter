@@ -24,8 +24,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header id="masthead" class="site-header wrapper--big">
+	<div class="site-branding">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -34,13 +34,13 @@
 				<?php
 			else :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$sachaelmiller_description = get_bloginfo( 'description', 'display' );
-			if ( $sachaelmiller_description || is_customize_preview() ) :
+			$testing_description = get_bloginfo( 'description', 'display' );
+			if ( $testing_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $sachaelmiller_description; /* WPCS: xss ok. */ ?></p>
+				<p class="site-description"><?php echo $testing_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 

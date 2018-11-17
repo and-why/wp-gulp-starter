@@ -9,10 +9,19 @@
     "branding"
 }
 
+.site-branding {
+  margin: 36px;
+  justify-self: center;
+}
+
 @media screen and (min-width: 37.5em) {
   .site-header {
     grid-template-columns: 300px 1fr;
     grid-template-areas:
       " branding menu"
+  }
+
+  .site-branding {
+    justify-self: start;
   }
 }

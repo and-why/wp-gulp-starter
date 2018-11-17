@@ -115,7 +115,11 @@ const syncOpts = {
   files: dir.build + '**/*',
   open: false,
   notify: false,
-  ghostMode: false,
+  ghostMode: {
+    clicks: false,
+    forms: false,
+    scroll: true,
+  },
   ui: {
     port: 8001,
   },

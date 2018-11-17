@@ -4,12 +4,12 @@
 	text-transform: uppercase;
 	justify-self: end;
 	grid-area: menu;
-	min-height: 50px;
 	width: 100%;
 	border: none;
 	color: white;
 	text-transform: uppercase;
 	font-size: 1em;
+	height: 50px;
 
 	ul {
 		visibility: hidden;
@@ -141,12 +141,16 @@
 				li {
 					margin: 0;
 					padding: 0.5em;
+
 				}
 			}
+
 
 			display: flex;
 			visibility: visible;
 			opacity:1;
+			height:auto;
+			font-size:1em;
 		}
 
 		a {
@@ -155,8 +159,14 @@
 
 		li {
 			margin: 0 2em 0 0;
+
+			&:last-child {
+				margin: 0;
+			}
 		}
 
+		height: auto;
+		margin-right: 36px;
 		width:auto;
 		justify-self: end;
 	}
@@ -183,6 +193,19 @@
 	}
 }
 
-.menu-menu-container {
-	height: 0;
+// .menu-menu-container {
+// 	height: 1em;
+// }
+
+button.menu-toggle {
+	&:hover {
+		border-color: $color__primary;
+
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__primary;
+	}
+
 }
